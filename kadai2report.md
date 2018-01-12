@@ -8,8 +8,7 @@ imagesc(ORG); axis image; % 画像の表示
 によって原画像を読み込み、グレースケールにして表示した結果を図1に示す．
 
 ![kadai2_1](https://github.com/kyuji1/lecture_image_processing/blob/master/figure/kadai2_1.jpg?raw=true)  
-　　図1 グレースケール画像
-
+図1 グレースケール画像
 
 
 階調数を2階調に設定して画像を表示する．
