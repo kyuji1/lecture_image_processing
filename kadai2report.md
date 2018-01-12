@@ -7,7 +7,7 @@ imagesc(ORG); axis image; % 画像の表示
 
 によって原画像を読み込み、グレースケールにして表示した結果を図1に示す．
 
-![kadai2_1](https://github.com/kyuji1/lecture_image_processing/blob/master/figure/kadai2_1.jpg?raw=true)  
+![kadai2_1](https://github.com/kyuji1/lecture_image_processing/blob/master/figure/kadai2_1.jpg?raw=true)
 図1 グレースケール画像
 
 
@@ -18,16 +18,16 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 表示した結果を図2に示す．
 
-![kadai2_2](https://github.com/kyuji1/lecture_image_processing/blob/master/figure/kadai2_2.jpg?raw=true)  
+![kadai2_2](https://github.com/kyuji1/lecture_image_processing/blob/master/figure/kadai2_2.jpg?raw=true)
 図2 2階調
 
 
 4階調と8階調に設定したときの画像を表示する．今回はどちらも量子化間隔を等しくして量子化を行った．結果を図3，図4に示す．
 
-![kadai2_3](https://github.com/kyuji1/lecture_image_processing/blob/master/figure/kadai2_3.jpg?raw=true)  
+![kadai2_3](https://github.com/kyuji1/lecture_image_processing/blob/master/figure/kadai2_3.jpg?raw=true)
 図3 4階調
 
-![kadai2_4](https://github.com/kyuji1/lecture_image_processing/blob/master/figure/kadai2_4.jpg?raw=true)  
+![kadai2_4](https://github.com/kyuji1/lecture_image_processing/blob/master/figure/kadai2_4.jpg?raw=true)
 図4 8階調
 
 
