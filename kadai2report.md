@@ -1,9 +1,9 @@
 # 課題2レポート
 「Mandrill」を原画像とする．この画像は高さ150ピクセル，幅150ピクセルである．
 
-ORG=imread('Mandrill.jpg');  
-ORG = rgb2gray(ORG); colormap(gray); colorbar;  
-imagesc(ORG); axis image;  
+ORG=imread('Mandrill.jpg'); % 原画像の入力  
+ORG = rgb2gray(ORG); colormap(gray); colorbar; % グレースケールに変換  
+imagesc(ORG); axis image; % 画像の表示  
 
 によって原画像を読み込み、グレースケールにして表示した結果を図1に示す．
 
@@ -13,8 +13,8 @@ imagesc(ORG); axis image;
 
 階調数を2階調に設定して画像を表示する．
 
-IMG = ORG>128;  
-imagesc(IMG); colormap(gray); colorbar;  axis image;  
+IMG = ORG>128; % 2階調画像にする  
+imagesc(IMG); colormap(gray); colorbar;  axis image; % グレースケールにして画像表示
 
 表示した結果を図2に示す．
 
