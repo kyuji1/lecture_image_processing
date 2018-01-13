@@ -1,9 +1,9 @@
 # 課題3レポート
 「Mandrill」を原画像とする．この画像は高さ150ピクセル，幅150ピクセルである．
 
-ORG=imread('Mandrill.jpg'); % 原画像の入力
-ORG = rgb2gray(ORG); colormap(gray); colorbar;
-imagesc(ORG); axis image; % 画像の表示
+ORG=imread('Mandrill.jpg');  
+ORG = rgb2gray(ORG); colormap(gray); colorbar;  
+imagesc(ORG); axis image;  
 
 によって原画像を読み込み、グレースケールにして表示した結果を図1に示す．
 
@@ -13,8 +13,8 @@ imagesc(ORG); axis image; % 画像の表示
 
 輝度値が64以上の画素を1，それ以外を0に変換して画像を表示する．
 
-IMG = ORG > 64;
-imagesc(IMG); colormap(gray); colorbar;
+IMG = ORG > 64;  
+imagesc(IMG); colormap(gray); colorbar;  
 
 表示した結果を図2に示す．
 
