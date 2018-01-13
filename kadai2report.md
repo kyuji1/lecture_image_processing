@@ -2,7 +2,9 @@
 「Mandrill」を原画像とする．この画像は高さ150ピクセル，幅150ピクセルである．
 
 ORG=imread('Mandrill.jpg'); % 原画像の入力  
+
 ORG = rgb2gray(ORG); colormap(gray); colorbar; % グレースケールに変換  
+
 imagesc(ORG); axis image; % 画像の表示  
 
 によって原画像を読み込み、グレースケールにして表示した結果を図1に示す．
