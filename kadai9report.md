@@ -1,4 +1,4 @@
-# 課題9レポート
+  # 課題9レポート
 「Mandrill」を原画像とする．この画像は高さ150ピクセル，幅150ピクセルである．
 
 ORG=imread('Mandrill.jpg'); % 原画像の入力  
@@ -11,8 +11,8 @@ imagesc(ORG); axis image; % 画像の表示
 図1 グレースケール画像
 
 
-ORG = imnoise(ORG,'salt & pepper',0.02); % ノイズ添付
-imagesc(ORG); colormap(gray); colorbar; % 画像の表示
+ORG = imnoise(ORG,'salt & pepper',0.02); % ノイズ添付  
+imagesc(ORG); colormap(gray); colorbar; % 画像の表示  
 
 によって画像にノイズを添付する．表示した画像を図2に示す．
 
@@ -21,25 +21,25 @@ imagesc(ORG); colormap(gray); colorbar; % 画像の表示
 
 このノイズを添付した画像からフィルタを使用し，ノイズを除去する．
 
-IMG = filter2(fspecial('average',3),ORG); % 平滑化フィルタでノイズ除去
-imagesc(IMG); colormap(gray); colorbar; % 画像の表示
+IMG = filter2(fspecial('average',3),ORG); % 平滑化フィルタでノイズ除去  
+imagesc(IMG); colormap(gray); colorbar; % 画像の表示  
 
 平滑化フィルタでノイズを除去した結果を図3に示す．
 
 ![kadai9_3](https://github.com/kyuji1/lecture_image_processing/blob/master/figure/kadai9_3.jpg?raw=true)  
 図3 平滑フィルタでのノイズ除去結果
 
-IMG = medfilt2(ORG,[3 3]); % メディアンフィルタでノイズ除去
-imagesc(IMG); colormap(gray); colorbar; % 画像の表示
+IMG = medfilt2(ORG,[3 3]); % メディアンフィルタでノイズ除去  
+imagesc(IMG); colormap(gray); colorbar; % 画像の表示  
 
 メディアンフィルタでノイズを除去した結果を図4に示す．
 
 ![kadai9_4](https://github.com/kyuji1/lecture_image_processing/blob/master/figure/kadai9_4.jpg?raw=true)  
 図4 メディアンフィルタでのノイズ除去結果
 
-f=[0,-1,0;-1,5,-1;0,-1,0]; % フィルタの設計
-IMG = filter2(f,IMG,'same'); % フィルタの適用
-imagesc(IMG); colormap(gray); colorbar; % 画像の表示
+f=[0,-1,0;-1,5,-1;0,-1,0]; % フィルタの設計  
+IMG = filter2(f,IMG,'same'); % フィルタの適用  
+imagesc(IMG); colormap(gray); colorbar; % 画像の表示  
 
 このフィルタは画像の濃度値の変化を強調して表現する高域強調フィルタである．結果を図5に示す．
 
