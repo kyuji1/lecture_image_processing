@@ -1,4 +1,4 @@
-# 課題6レポート
+ # 課題6レポート
 「Mandrill」を原画像とする．この画像は高さ150ピクセル，幅150ピクセルである．
 
 ORG=imread('Mandrill.jpg'); % 原画像の入力  
@@ -13,8 +13,8 @@ imagesc(ORG); axis image; % 画像の表示
 
 閾値128で二値化した画像を表示する．
 
-IMG = ORG>128; % 128による二値化 
-imagesc(IMG); colormap(gray); colorbar;  axis image; % グレースケールにして画像表示
+IMG = ORG>128; % 128による二値化  
+imagesc(IMG); colormap(gray); colorbar;  axis image; % グレースケールにして画像表示  
 
 表示した結果を図2に示す．
 
@@ -23,8 +23,8 @@ imagesc(IMG); colormap(gray); colorbar;  axis image; % グレースケールに�
 
 ディザ法によって二値化した画像を表示する．
 
-IMG = dither(ORG); % ディザ法による二値化
-imagesc(IMG); colormap(gray); colorbar; % グレースケールにして画像表示
+IMG = dither(ORG); % ディザ法による二値化  
+imagesc(IMG); colormap(gray); colorbar; % グレースケールにして画像表示  
 
 ![kadai6_3](https://github.com/kyuji1/lecture_image_processing/blob/master/figure/kadai6_3.jpg?raw=true)  
 図3 ディザ法によって二値化した画像
