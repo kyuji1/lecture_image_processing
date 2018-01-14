@@ -1,4 +1,4 @@
-# 課題7レポート
+  # 課題7レポート
 「Mandrill」を原画像とする．この画像は高さ150ピクセル，幅150ピクセルである．
 
 ORG=imread('Mandrill.jpg'); % 原画像の入力  
@@ -14,16 +14,16 @@ imhist(ORG); % 濃度ヒストグラムを生成、表示
 ![kadai7_2](https://github.com/kyuji1/lecture_image_processing/blob/master/figure/kadai7_2.jpg?raw=true)  
 図2 濃度ヒストグラム
 
-ORG = double(ORG);
-mn = min(ORG(:)); % 濃度値の最小値を算出
-mx = max(ORG(:)); % 濃度値の最大値を算出
-ORG = (ORG-mn)/(mx-mn)*255;
+ORG = double(ORG);  
+mn = min(ORG(:)); % 濃度値の最小値を算出  
+mx = max(ORG(:)); % 濃度値の最大値を算出  
+ORG = (ORG-mn)/(mx-mn)*255;  
 
 によって画素のダイナミックレンジを0~255に拡大する．
 
-imagesc(ORG); colormap(gray); colorbar; % 画像の表示
-ORG = uint8(ORG); % 8ビットの符号なし整数に変換
-imhist(ORG); % 濃度ヒストグラムを生成、表示
+imagesc(ORG); colormap(gray); colorbar; % 画像の表示  
+ORG = uint8(ORG); % 8ビットの符号なし整数に変換  
+imhist(ORG); % 濃度ヒストグラムを生成、表示  
 
 によってダイナミックレンジを拡大した画像を表示し，濃度ヒストグラムを生成する．
 unit8を使用する理由はダイナミックレンジを拡大した時にORGを小数に変換したため，そのままではヒストグラムを生成することができない．そこでunit8を使い8ビットの符号なし整数に変換することでヒストグラムを生成することができるようになる．
