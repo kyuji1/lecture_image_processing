@@ -13,8 +13,8 @@ imagesc(ORG); axis image; % 画像の表示
 
 閾値128で二値化した画像を表示する．
 
-IMG = ORG>128; % 閾値128で二値化 
-imagesc(IMG); colormap(gray); colorbar;  axis image; % グレースケールにして画像表示
+IMG = ORG>128; % 閾値128で二値化  
+imagesc(IMG); colormap(gray); colorbar;  axis image; % グレースケールにして画像表示  
 
 表示した結果を図2に示す．
 
@@ -23,8 +23,8 @@ imagesc(IMG); colormap(gray); colorbar;  axis image; % グレースケールに�
 
 二値化した画像にラベリングを行う．
 
-IMG = bwlabeln(IMG);　%ラベリング
-imagesc(IMG); colormap(jet); colorbar; % 画像の表示
+IMG = bwlabeln(IMG);　%ラベリング  
+imagesc(IMG); colormap(jet); colorbar; % 画像の表示  
 
 表示した結果を図3に示す．
 
